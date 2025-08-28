@@ -26,7 +26,7 @@ activate-hint: ## Muestra el comando para activar el venv en tu terminal
 	@echo "Activa manualmente el entorno en tu terminal:"
 	@echo "  macOS/Linux (bash/zsh):  source .venv/bin/activate"
 	@echo "  Windows PowerShell:      .\\.venv\\Scripts\\Activate.ps1"
-	@echo "  Windows CMD:             .\\.venv\\Scripts\\activate.bat"
+	@echo "  Windows CMD:             source venv/bin/activate"
 
 .PHONY: deactivate-hint
 deactivate-hint: ## Muestra cómo desactivar (salir) del entorno virtual en tu terminal actual
