@@ -1,0 +1,47 @@
+# pyproject.toml — Configuración básica para el curso "python-course"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+# Evita que Black toque artefactos y el venv
+extend-exclude = """
+/(
+  \.venv
+| venv
+| env
+| build
+| dist
+| \.mypy_cache
+| \.pytest_cache
+| \.ipynb_checkpoints
+)/
+"""
+
+[tool.isort]
+profile = "black"
+line_length = 100
+# No intentar ordenar imports dentro de estos directorios
+skip = [".venv", "venv", "env", "build", "dist", ".mypy_cache", ".pytest_cache"]
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = [
+  "E203",  # compatible con Black en slicing
+  "W503"   # compatible con Black para binary operators
+]
+exclude = [
+  ".venv", "venv", "env",
+  ".git", "__pycache__",
+  ".mypy_cache", ".pytest_cache",
+  "build", "dist",
+  ".ipynb_checkpoints"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+# Si quieres warnings más claros, descomenta:
+# filterwarnings = [
+#   "error::DeprecationWarning",
+#   "ignore:.*distutils.*:DeprecationWarning"
+# ]

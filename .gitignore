@@ -71,7 +71,6 @@ ipython_config.py
 # =========================
 # IDEs y editores
 # =========================
-.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace

@@ -1,0 +1,16 @@
+# Núcleo
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+scikit-learn>=1.5
+
+# Jupyter
+jupyter>=1.0
+ipykernel>=6.29
+jupyterlab>=4.2
+
+# Calidad y pruebas
+black>=24.3
+isort>=5.13
+flake8>=7.0
+pytest>=8.2
