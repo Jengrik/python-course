@@ -1,8 +1,10 @@
 # Núcleo
 numpy>=1.26
 pandas>=2.2
+openpyxl>=3.1.0
 matplotlib>=3.8
 scikit-learn>=1.5
+seaborn>=0.13
 
 # Jupyter
 jupyter>=1.0

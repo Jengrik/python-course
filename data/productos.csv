@@ -1,0 +1,8 @@
+id,producto,categoria,precio,fecha,unidades
+1,Auriculares,Audio,35.5,2024-01-02,3
+2,Teclado,Periféricos,29.9,2024-01-03,2
+3,Monitor,Displays,199.0,2024-01-03,1
+4,Mouse,Periféricos,15.0,2024-01-04,5
+5,Barra de sonido,Audio,120.0,2024-01-05,1
+6,Teclado,Periféricos,25.0,2024-01-06,4
+7,Monitor,Displays,210.0,2024-01-06,2
